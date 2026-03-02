@@ -16,6 +16,8 @@ Este proyecto consiste en el diseño e implementación de una base de datos rela
 
 El objetivo fue construir una base de datos normalizada, optimizada, segura y automatizada, aplicando buenas prácticas de modelado relacional y diseño de bases de datos.
 
+![alt text](BaseDatos.png)
+
 ---
 
 ## Modelo de Empresa Planteado
