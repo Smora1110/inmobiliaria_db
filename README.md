@@ -1,3 +1,29 @@
+La empresa desea garantizar la integridad de los datos y el registro de cambios en su sistema.
+
+Para ello, te han solicitado crear estructuras y mecanismos que permitan auditar las operaciones y mantener la coherencia de los datos cuando se modifiquen precios o estados de las propiedades.
+
+
+
+Tu tarea consiste en implementar consultas y estructuras SQL que automaticen la auditoría, apliquen transacciones y presenten la información en vistas analíticas.
+
+
+
+Trigger 1: Crear un trigger que se active al actualizar el precio de una propiedad, registrando el cambio en una tabla auditoria_precios con:
+id_auditoria.
+id_propiedad.
+precio_anterior.
+precio_nuevo.
+fecha_cambio, usuario.
+Trigger 2: Crear un trigger que evite eliminar una propiedad si está asociada a un contrato activo, mostrando un mensaje de error personalizado.
+Transacción: Simular un proceso de arriendo con transacciones (START TRANSACTION, COMMIT, ROLLBACK), donde se actualiza el estado de la propiedad y se registra el contrato.
+Vista: Crear una vista llamada vista_resumen_propiedades que muestre:
+nombre_propiedad.
+ciudad, estado.
+precio.
+nombre_agente
+			y si la propiedad está o no alquilada.
+
+Consulta final: Mostrar las 10 últimas modificaciones registradas en la tabla auditoria_precios (ORDER BY fecha_cambio DESC LIMIT 10).
 # Sistema de Gestión Inmobiliaria – inmobiliaria_db
 
 Sebastian Andres Mora Valenzuela
